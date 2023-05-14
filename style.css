@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
   /* border: 4px solid rgb(124, 26, 26); */
 }
 
@@ -76,26 +77,27 @@ body {
 
 /* Set a width and height specification the main parent element to avoid child overflow */
 .gridBox {
-  width: 850px;
+  width: 700px;
   height: 700px;
   border: 5px solid #044be2;
   border-radius: 10px;
   display: flex;
-  flex-wrap: wrap;
+  background-color: rgb(212, 201, 201);
   flex-direction: column;
 }
 
 /* Keep flex: 1 1 0; basis needs to be 0 or else the grid doesn't properly size also no wrap on this one only necessary on gridBox */
 .secondGridBox {
   display: flex;
-  flex: 1 1 0;
+
+  flex: 1 1 auto;
 }
 .smallGrids {
-  flex: 1 1 90px;
+  flex: 1 1 auto;
   border: 1px solid #000000;
 }
 
-.smallGrids:hover {
+.hover {
   background: #e2044e;
 }
 
