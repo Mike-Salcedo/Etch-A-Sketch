@@ -20,21 +20,24 @@ let smallGrids = document.createElement("div");
 const createGrid = () => {
   gridBox.textContent = ""; // Deletes the previous grid.
 
-  const gridSize = prompt("what size of a grid do you want");
+  const gridSize = prompt("what size of a grid do you want? 1 - 100");
+  if (gridSize > 100) {
+    alert("Only from 1 to 100");
+  } else if (gridSize <= 100) {
+    for (let i = 0; i < gridSize; i++) {
+      secondGridBox = document.createElement("div");
+      secondGridBox.classList.add("secondGridBox");
+      gridBox.appendChild(secondGridBox);
 
-  for (let i = 0; i < gridSize; i++) {
-    secondGridBox = document.createElement("div");
-    secondGridBox.classList.add("secondGridBox");
-    gridBox.appendChild(secondGridBox);
-
-    for (let j = 0; j < gridSize; j++) {
-      smallGrids = document.createElement("div");
-      smallGrids.classList.add("smallGrids");
-      secondGridBox.appendChild(smallGrids);
+      for (let j = 0; j < gridSize; j++) {
+        smallGrids = document.createElement("div");
+        smallGrids.classList.add("smallGrids");
+        secondGridBox.appendChild(smallGrids);
+      }
     }
   }
+
   addColorToDiv();
-  clearGrid();
 };
 
 const createGridButton = document.querySelector(".createGridButton");
@@ -68,3 +71,10 @@ function clearGrid() {
 const clearGridButton = document.querySelector(".deleteGridButton");
 
 clearGridButton.addEventListener("click", clearGrid);
+
+// Dynamic color picker trying to use the color wheel to have the user pick the color they want to draw with.
+
+const colorChosen = (document.querySelector("#color").onchange = (e) => {
+  console.log(e.target.value);
+});
+
