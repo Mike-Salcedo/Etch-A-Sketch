@@ -30,11 +30,11 @@ const createGrid = () => {
     for (let j = 0; j < gridSize; j++) {
       smallGrids = document.createElement("div");
       smallGrids.classList.add("smallGrids");
-
       secondGridBox.appendChild(smallGrids);
     }
   }
   addColorToDiv();
+  clearGrid();
 };
 
 const createGridButton = document.querySelector(".createGridButton");
@@ -58,13 +58,13 @@ function addColorToDiv() {
   );
 }
 
-// Clean the grid when clicking on a button but keeping everything else
-
-const deleteGridButton = document.querySelector(".deleteGridButton");
+// Clean the grid when clicking on a button but keeping current layout
 
 function clearGrid() {
-  const deleter = document.querySelectorAll(".smallGrids");
-  deleter.forEach(deleter.classList.remove(".hover"));
+  const clearGrid = document.querySelectorAll(".smallGrids");
+  clearGrid.forEach((element) => element.classList.remove("hover"));
 }
 
-deleteGridButton.addEventListener("click", clearGrid);
+const clearGridButton = document.querySelector(".deleteGridButton");
+
+clearGridButton.addEventListener("click", clearGrid);
