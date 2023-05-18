@@ -50,14 +50,21 @@ createGridButton.addEventListener("click", createGrid);
 
 // Next Section:
 
+// Dynamic color picker trying to use the color wheel to have the user pick the color they want to draw with.
+
 // Trying to add color when the div is hovered over.
 
 // Was able to work it out the addColorToDiv() function needs to be inside of the createGridFunction as a callback though but it's working
 
+let colorChosen = document.querySelector("#colorChosen");
+
 function addColorToDiv() {
   const color = document.querySelectorAll(".smallGrids");
   color.forEach((btn) =>
-    btn.addEventListener("mouseover", () => btn.classList.add("hover"))
+    btn.addEventListener(
+      "mouseover",
+      () => (btn.style.background = colorChosen.value)
+    )
   );
 }
 
@@ -65,16 +72,9 @@ function addColorToDiv() {
 
 function clearGrid() {
   const clearGrid = document.querySelectorAll(".smallGrids");
-  clearGrid.forEach((element) => element.classList.remove("hover"));
+  clearGrid.forEach((element) => (element.style.background = ""));
 }
 
 const clearGridButton = document.querySelector(".deleteGridButton");
 
 clearGridButton.addEventListener("click", clearGrid);
-
-// Dynamic color picker trying to use the color wheel to have the user pick the color they want to draw with.
-
-const colorChosen = (document.querySelector("#color").onchange = (e) => {
-  console.log(e.target.value);
-});
-
