@@ -68,7 +68,7 @@ function addColorToDiv() {
   );
 }
 
-// Clean the grid when clicking on a button but keeping current layout
+// Clean the grid when clicking on a button but keeping current grid size
 
 function clearGrid() {
   const clearGrid = document.querySelectorAll(".smallGrids");

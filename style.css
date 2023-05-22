@@ -40,17 +40,18 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  /* gap: 80px; */
   align-items: center;
   border-radius: 30px;
   background-color: #14213d;
 }
 
 button {
+  margin-top: 70px;
   border: 0px;
   background-color: white;
   width: 170px;
-  height: 40px;
+  height: 50px;
   border-radius: 20px;
   font-style: italic;
   font-weight: bold;
@@ -58,8 +59,9 @@ button {
 }
 
 button:hover {
-  width: 190px;
-  height: 50px;
+  /* width: 190px; */
+  width: 150px;
+  height: 40px;
 }
 
 /* Attempting to make the color picker circle */
@@ -83,7 +85,6 @@ button:hover {
 }
 .smallGrids {
   flex: 1 1 auto;
-  /* border: 1px solid #000000; */
 }
 
 .hover {
