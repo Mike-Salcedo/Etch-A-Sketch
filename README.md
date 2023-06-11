@@ -1,4 +1,11 @@
 # Etch-A-Sketch
-This is an Etch-A-Sketch made by me following the Odin Project.
+This is an Etch-A-Sketch made by me following the Odin Project it shows my knowledge of HTML,CSS and Vanilla JavaScript. 
 
-Live Preview: https://mike-salcedo.github.io/Etch-A-Sketch/
+Etch A Sketch is a mechanical drawing toy invented by André Cassagnes this a web version made by Mike Salcedo. 
+
+Applied knowledge of DOM manipulation and DOM events through JS.
+
+Improved code readability and structure.
+
+Used CSS3 flex to create game grid layout.
+
