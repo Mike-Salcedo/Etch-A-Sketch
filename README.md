@@ -1,13 +1,25 @@
-# Etch-A-Sketch
-This is an Etch-A-Sketch made by me following the Odin Project it shows my knowledge of HTML,CSS and Vanilla JavaScript. 
+ ## 🎨Etch-A-Sketch: Interactive Pixel Art Playground
 
-*Etch A Sketch is a mechanical drawing toy invented by André Cassagnes this a web version.* 
+**Bring your pixel art visions to life with this customizable and intuitive web app!**
 
-Summary: 
+**Key Features:**
 
-* Applied knowledge of DOM manipulation and DOM events through JS.
+* **Dynamic Grid:** Choose your canvas size from 1x1 to 100x100 squares, creating grids perfect for intricate art or quick sketches.
+* **Vibrant Color Picker:** Select your desired shade from a full-spectrum color palette to personalize your masterpieces.
+* **Intuitive Drawing:** Simply hover your mouse over squares to paint them instantly, transforming the grid into your pixel canvas.
+* **Clear and Reset:** Start fresh with a click! Use the dedicated buttons to clear the entire grid or create a new one with your preferred size.
 
-* Improved code readability and structure.
+**Built with:**
 
-* Used CSS3 flex to create game grid layout.
+* HTML
+* CSS
+* JavaScript
+* Flexbox
 
+**This project showcases skills in:**
+
+* Front-end development
+* User interface (UI) design
+* Problem-solving
+
+**Ready to unleash your inner pixel artist? Give this Etch-A-Sketch app a try and watch your creations come to life!**
