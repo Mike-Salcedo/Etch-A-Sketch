@@ -22,4 +22,4 @@
 * User interface (UI) design
 * Problem-solving
 
-**Ready to unleash your inner pixel artist? Give this Etch-A-Sketch app a try and watch your creations come to life!**
+
